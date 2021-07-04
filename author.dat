@@ -1,0 +1,13 @@
+<auth>
+    <version: "custom-auth:VERSION3.0.0">
+    <filetype>3</filetype>
+    <jsondata>{"Name":"Cari", "LastName":"Peng"}</jsondata>
+    <implement>lang.compiler</implement>
+    <implement>lang.compiler:AutoVersionChecker.GetLastUpdate</implement>
+    <implement>sys.AutoLocalization</implement>
+    <implement>sys.AutoLocalization:AutoVersionChecker.GetLastUpdate</implement>
+    <implement>sys.build</implement>
+    <systemLocalization>sys.AutoLocalization</systemLocalization>
+    <compiler>compiler.OnCompileEvent.Choose()</comipler>
+    <build>sys.build():GetBuildPath</build>
+</auth>
